@@ -17,7 +17,7 @@
 
 main{
     display: flex;
-    
+    padding: 0 0 15px 0;
     width: 940px;   
     margin:  0  auto;
     
@@ -26,6 +26,7 @@ main{
     border: none;
     color: #0A3871;
     margin-top: 10px;
+    margin-right: 50px;
     text-transform: lowercase;
     padding: 10px;
     width: 535px;
@@ -47,8 +48,9 @@ opacity: 30%;
     margin-right: 98px;
     margin-top: 20px;
     padding-left: 20px; 
-    position: absolute;
-    width: auto;
+    position: relative;
+    width:332px;
+    height: 375px;
     
 }
 .mensaje:focus{ outline: none;}
@@ -92,12 +94,10 @@ opacity: 30%;
     cursor: pointer;
     height: 67px;
     margin-left: 100px;
-    margin-top: 402px;
-    position: absolute;
     width: 200px; 
-    transition: 1s  ;
-    
+    transition: 1s  ; 
 }
+
 .copiar:hover {
     background: #0A3871;
     transform: scale(1.1);
