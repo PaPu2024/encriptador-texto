@@ -4,7 +4,6 @@ const campoMensaje = document.querySelector("#campo-mensaje");
 
 
 
-
 function encriptar() {
     var str = campoTexto.value;
     var mapObj = {
@@ -14,6 +13,7 @@ function encriptar() {
         o:"ober",
         u:"ufat"
     }
+    str = str.toLowerCase ();
     str = str.replace(/e|i|a|o|u/g, function(matched){
     return mapObj[matched];
     });
@@ -32,7 +32,7 @@ function desencriptar(){
         ober:"o",
         ufat:"u"
     }
-
+    str = str.toLowerCase ();
     str = str.replace(/enter|imes|ai|ober|ufat/g, function(matched){
     return mapObj[matched];
     });
