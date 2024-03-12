@@ -2,10 +2,52 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/css.gg@2.0.0/icons/css/danger.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>encriptador</title>
 </head>
+
 <body>
     
+    <header>
+        <img class="logo" src="img/Logo.png" alt="logo de alura">
+    </header>
+    <main class="main">
+        <section>
+            <textarea id="textoUsuario" class="campo-texto" cols="30" rows="5" placeholder="texto a encriptar"></textarea>
+            
+            <h6 class="informacion"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/>
+              </svg> Solo letras minúsculas y sin acentos</h6>
+
+            <div class="btn">
+                <button onclick="encriptar();" class="btnEncriptar">encriptar</button>
+                <button onclick="desencriptar()" class="btnDesencriptar">desencriptar</button>
+            </div>
+           
+        </section>
+        <section class="campo-mensaje">
+            <textarea  id="campo-mensaje" class="mensaje" cols="20"  rows="10"></textarea>
+            <div  >
+                <button id="copy" onclick="btnCopiar();" class="copiar">copiar </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy Copyright Barberia Alura 2020</p>
+        
+        <div class="socialRedes">
+            <a href=></a>
+        </div>
+
+    </footer>
+    <script src="app.js"></script>
 </body>
+
 </html>
