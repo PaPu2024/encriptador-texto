@@ -18,6 +18,7 @@
         <img class="logo" src="img/Logo.png" alt="logo de alura">
     </header>
     <main class="main">
+
         <section>
             <textarea id="textoUsuario" class="campo-texto" cols="30" rows="5" placeholder="texto a encriptar"></textarea>
             
@@ -31,7 +32,17 @@
             </div>
            
         </section>
-        <section class="campo-mensaje">
+
+        <section class="incio-inf" id="inicioInf">
+            <div class="caja-incio">
+                <img src="img/Muñeco.png" alt="muñeco">
+                <h1>Ningún mensaje fue encontrado</h1>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+           
+        </section>
+
+        <section class="campo-mensaje" id="campoMensaje" style="display: none;">
             <textarea  id="campo-mensaje" class="mensaje" cols="20"  rows="10"></textarea>
             <div  >
                 <button id="copy" onclick="btnCopiar();" class="copiar">copiar </button>
@@ -40,11 +51,7 @@
     </main>
 
     <footer>
-        <p class="copyright">&copy Samuel Leyva De Los Santos 2024</p>
-        
-        <div class="socialRedes">
-            <a href=></a>
-        </div>
+        <p class="copyright">&copy 2024 Samuel Leyva De Los Santos </p>
 
     </footer>
     <script src="app.js"></script>

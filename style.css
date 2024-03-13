@@ -38,6 +38,37 @@ opacity: 30%;
 }
 .campo-texto:focus {outline: none;}
 
+.caja-incio{
+    padding: 10px;
+    border-radius: 25px;
+   background-color:white ;
+   box-shadow: 2px 10px 49px -30px rgba(0,0,0,0.75);
+}
+
+
+.caja-incio h1 , .caja-incio p , .caja-incio img{
+    text-align: center;
+    color: #000000;
+    background-color:white ;
+   
+    
+}
+
+.caja-incio >h1{
+    font-weight: bold;
+    line-height:  26px;
+    padding: 15px 0 15px 0;
+   
+
+}
+
+.caja-incio >p{
+    font-size: 18px;
+    line-height: 20px;
+   
+
+}
+
 .mensaje{
     background: #d8dfe8;
     background-repeat: no-repeat;
@@ -107,7 +138,7 @@ opacity: 30%;
     color: #495057;
     font-size: 18px;
     opacity: 70%;
-   
+    width: 500px;
 
 }
 
