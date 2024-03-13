@@ -18,7 +18,7 @@ function encriptar() {
     return mapObj[matched];
     });
 
-    document.getElementById("campo-mensaje").style.backgroundImage = "none";
+    
     document.getElementById("campo-mensaje").value = str;
 
 }
@@ -37,7 +37,7 @@ function desencriptar(){
     return mapObj[matched];
     });
 
-    document.getElementById("campo-mensaje").style.backgroundImage = "none";
+   
     document.getElementById("campo-mensaje").value = str;
 }
 
