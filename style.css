@@ -1,5 +1,5 @@
 *{
-    background: #f3f5fc;
+    background:#d8dfe8;
     font-family: "Anta", sans-serif;
     font-size: 32px;
     font-weight: 400;
@@ -24,13 +24,15 @@ main{
 }
 .campo-texto{
     border: none;
+    border-radius: 20px;
     color: #0A3871;
     margin-top: 10px;
     margin-right: 50px;
     text-transform: lowercase;
     padding: 10px;
     width: 535px;
-    height: 303px;;
+    height: 303px;
+    box-shadow: -2px 4px 25px -11px rgba(10,56,113,1);
 }
 
 ::placeholder{ color: #0a3871;
@@ -41,8 +43,8 @@ opacity: 30%;
 .caja-incio{
     padding: 10px;
     border-radius: 25px;
-   background-color:white ;
-   box-shadow: 2px 10px 49px -30px rgba(0,0,0,0.75);
+    background-color:white ;
+    box-shadow: 2px 10px 49px -30px rgba(0,0,0,0.75);
 }
 
 
@@ -70,18 +72,17 @@ opacity: 30%;
 }
 
 .mensaje{
-    background: #d8dfe8;
-    background-repeat: no-repeat;
+    background: white;
     border: none;
     border-radius: 24px;   
     color: #0a3871;
     margin-right: 98px;
-    margin-top: 20px;
+    margin-top: 10px;
     padding-left: 20px; 
     position: relative;
     width:332px;
     height: 375px;
-    
+    box-shadow: -2px 4px 25px -11px rgba(10,56,113,1);
 }
 .mensaje:focus{ outline: none;}
 
@@ -148,11 +149,211 @@ footer {
     align-items: center;
     position: relative;
     width: 100%;
-     
+    background: white;
     padding: 50px 0; 
   }
 
 footer p{
     font-weight: bold;
+    background: white;
+}
 
+@media (max-width: 425px) {
+    *{
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 150%;
+        
+    
+    }
+    
+    .logo{
+        margin-top: 10px;
+        padding:0 35%;
+        width: 30%;
+    
+    }
+    
+    main{
+        flex-direction: column;
+        width: auto;   
+        margin:  10px;
+        padding: 15px 0;
+        
+    }
+    .campo-texto{
+       
+        width: 80%;
+        height: 100px;
+        margin: 10px 10%;
+        padding: 5px;
+    }
+    
+    
+    .caja-incio{
+        padding: 0;
+        width: auto;
+        margin: 15px
+    }
+
+    .caja-incio> img{
+        width: 50%;
+        padding-top: 15px;
+        margin: 0 25%;
+    }
+    
+    .caja-incio >h1{
+        font-weight: bold;
+        line-height:  25px;
+        padding:0 ;
+        font-size: 20px;
+       
+    
+    }
+    
+    .caja-incio >p{
+        font-size: 10px;
+        line-height: 20px;
+       
+    
+    }
+    
+    .mensaje{
+        
+        width: 80%;
+        height: 100px;
+        margin: 15px 10%;
+        padding: 5px;
+        
+    }
+    
+    
+    .btn{
+        flex-direction: column;
+        margin-top: 0;
+        
+    
+    }
+    
+    .btnDesencriptar, .btnEncriptar{
+        height: 40px;
+        width: auto;
+        margin:10px;
+        
+    }
+    
+    .copiar{
+        height: 40px;
+        width: 20%;
+        margin:5px 40% ;
+    }
+
+    .informacion{
+        color: #495057;
+        font-size: 10px;
+        opacity: 70%;
+        width:auto;
+    
+    }
+    
+    
+}
+
+@media (max-width: 768px){
+    *{
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 150%;
+        
+    
+    }
+    
+    .logo{
+        margin-top: 10px;
+        padding:0 35%;
+        width: 30%;
+    
+    }
+    
+    main{
+        flex-direction: column;
+        width: auto;   
+        margin:  10px;
+        padding: 15px 0;
+        
+    }
+    .campo-texto{
+       
+        width: 80%;
+        height: 100px;
+        margin: 10px 10%;
+        padding: 5px;
+    }
+    
+    
+    .caja-incio{
+        padding: 0;
+        width: auto;
+        margin: 15px
+    }
+
+    .caja-incio> img{
+        width: 50%;
+        padding-top: 15px;
+        margin: 0 25%;
+    }
+    
+    .caja-incio >h1{
+        font-weight: bold;
+        line-height:  25px;
+        padding:0 ;
+        font-size: 20px;
+       
+    
+    }
+    
+    .caja-incio >p{
+        font-size: 10px;
+        line-height: 20px;
+       
+    
+    }
+    
+    .mensaje{
+        
+        width: 80%;
+        height: 100px;
+        margin: 15px 10%;
+        padding: 5px;
+        
+    }
+    
+    
+    .btn{
+        flex-direction: column;
+        margin-top: 0;
+        
+    
+    }
+    
+    .btnDesencriptar, .btnEncriptar{
+        height: 40px;
+        width: auto;
+        margin:10px;
+        
+    }
+    
+    .copiar{
+        height: 40px;
+        width: 20%;
+        margin:5px 40% ;
+    }
+
+    .informacion{
+        color: #495057;
+        font-size: 10px;
+        opacity: 70%;
+        width:auto;
+    
+    }
 }
